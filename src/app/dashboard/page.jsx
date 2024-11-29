@@ -14,7 +14,7 @@ const playfairDisplay = Playfair_Display({
 });
 export default async function Home() {
   const response = await axiosInstance({
-    url: 'http://localhost:3000/api/orders',
+    url: 'https://glow-organic-backend1-70pph0hsh-syren0914s-projects.vercel.app/api/orders',
     method: 'get',
   });
   const { orders, services } = response.data;
